@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+     <head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>To Do List App</title>
+          <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+          <link rel="stylesheet" href="css/style.css">
+          <script src="js/script.js" defer></script>
+     </head>
+     <body>
+          <div class="todo_wrapper">
+               <!-- heading elm  -->
+               <div class="heading">
+                    <h1>To Do List App</h1>
+               </div>
+               <!-- task input elm  -->
+               <div class="input_elm">
+                    <input type="text" placeholder="New Task" id="task_input" name="task" title="Enter New Task"> 
+                    <button title="ADD TASK" onclick="saveTask()" class="save_btn"><i class="fa fa-save"></i></button>
+                    <button title="EDIT TASK" class="edit_btn hide"><i class="fa fa-edit"></i></button>
+               </div>
+               <!-- filter elms  -->
+               <div class="filters">
+                    <span class="active">All</span>
+                    <span>Actives</span>
+                    <span>Completed</span>
+                    <button onclick="delAllTasks()">All Clear</button>
+               </div>
+               <!-- show todo tasks elms  -->
+               <div class="todo_list">
+                    <ul class="tasksListElm">
+                         <li>
+                              <input type="checkbox" title="Check Uncheck">
+                              <p>Task Name</p>
+                              <div class="actions">
+                                   <button title="editTask"><i class="fa fa-pencil-square"></i></button>
+                                   <button title="deleteTask"><i class="fa fa-trash"></i></button>
+                              </div>
+                         </li>
+                         <li>
+                              <input type="checkbox" title="Check Uncheck">
+                              <p>Task Name</p>
+                              <div class="actions">
+                                   <button title="editTask"><i class="fa fa-pencil-square"></i></button>
+                                   <button title="deleteTask"><i class="fa fa-trash"></i></button>
+                              </div>
+                         </li>
+                    </ul>
+               </div>
+          </div>
+     </body>
+</html>
